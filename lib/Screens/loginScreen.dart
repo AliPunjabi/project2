@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:project2/Customs/button.dart';
 import 'package:project2/Customs/button2.dart';
 import 'package:project2/Customs/transitions.dart';
+import 'package:project2/Screens/signup.dart';
 
 class loginscreen extends StatelessWidget {
   @override
@@ -45,15 +46,14 @@ class loginscreen extends StatelessWidget {
             width: 350,
             child: CustomElevatedButton2(
                 onPressed: () {
-                  /* Navigator.of(context).push(
+                  Navigator.of(context).push(
                     Transitions(
                         transitionType: TransitionType.fade,
                         curve: Curves.bounceInOut,
                         duration: const Duration(milliseconds: 500),
                         reverseCurve: Curves.bounceOut,
-                        widget:
-                            login()), //this will leads you to login screen
-                  );*/
+                        widget: signup()), //this will leads you to login screen
+                  );
                 },
                 child: Text('SIGN UP',
                     style: TextStyle(
