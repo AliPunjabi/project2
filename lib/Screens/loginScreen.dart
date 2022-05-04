@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:project2/Customs/button.dart';
 import 'package:project2/Customs/button2.dart';
 import 'package:project2/Customs/transitions.dart';
+import 'package:project2/Screens/screen4.dart';
 import 'package:project2/Screens/signup.dart';
 
 class loginscreen extends StatelessWidget {
@@ -22,7 +23,7 @@ class loginscreen extends StatelessWidget {
             child: CustomElevatedButton(
                 // cutom button for signup, you can check it properties from lib/Customs/button.dart
                 onPressed: () {
-                  /* Navigator.of(context).push(
+                  Navigator.of(context).push(
                     //transitions used inside navigation for smooth exchange of screens
                     Transitions(
                         //you can check its properties from lib/Customs/transitions.dart
@@ -31,8 +32,8 @@ class loginscreen extends StatelessWidget {
                         duration: const Duration(milliseconds: 500),
                         reverseCurve: Curves.bounceOut,
                         widget:
-                            signup()), //this will leads you to signup screen
-                  );*/
+                            listscreen()), //this will leads you to signup screen
+                  );
                 },
                 child: Text('SIGN IN',
                     style: TextStyle(
